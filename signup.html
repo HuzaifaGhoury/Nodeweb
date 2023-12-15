@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f8f9fa;
+      }
+
+      .login-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        max-width: 1000px;
+        padding: 2rem;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        background-color: #ffffff;
+      }
+
+      .login-img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .login-form {
+        width: 45%;
+      }
+
+      .login-form h2 {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+      }
+
+      .login-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .login-form input {
+        height: 30px;
+        width: 94%;
+        padding: 0.5rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      .login-form button {
+        width: 98%;
+        padding: 0.5rem;
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        border-radius: 3px;
+        height: 45px;
+        cursor: pointer;
+      }
+
+      .login-form button:hover {
+        background-color: #0056b3;
+      }
+      
+      @media (max-width:676px){
+        .login-container{
+            display: block;
+        }
+        .login-img {
+    display: none;
+      }
+      .login-form {
+        width: 100%;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL2aTrhv2Y0sPp-LBcfLJEybLAN9HfQdz1Jw&usqp=CAU"
+        alt="Login Image"
+        class="login-img"
+      />
+      <form class="login-form" action="signup" method="post">
+        <h2>Create an Account</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="username" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Signup</button>
+            <p>Already have an account <a href="/">login</a></p>
+           </form>
+    </div>
+  </body>
+</html>
