@@ -9,6 +9,9 @@ const userSchema = new mongoose.Schema({
     },
     password: {
       type: String,
+    },
+    role: {
+      type: String,
     }
     // token: {
     //   type: String,
